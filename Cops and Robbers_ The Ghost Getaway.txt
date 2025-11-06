@@ -1,0 +1,58 @@
+﻿The game I have come up with is Cops and Robbers: The Ghost Getaway, which is a game. 
+
+The way the game works is the player controls a cop in a maze and has to tag the invisible Robber, where the Robber is only visible when they are moving, and when the Robber stops they are invisible. The Cop has to chase the Robber hoping to catch the image of the Robber in order to win, and the Robber wins if they abandon the gold before they get caught.
+
+The cop is controlled by the player which is responsible for securing the maze. The movement is controlled by the arrow keys. The main event for the cop is the Tag Event where if the cop moves onto the same tile as the robber the game ends in a win. The cop has to avoid collision with the maze.
+Associated event is Tag Event which Results in a win
+Image is   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The robber is the computer player that moves randomly in the maze, where the robbers movement goes between moving (visible/flickering) and stopping for 1-3 seconds (Invisible). The game revolves around the Robbers visibility, and if the cop does not catch the robber the gold drop event occurs every 10 seconds until time is gone.
+Associated Events: Visibility event (Flicker/Vanish), Gold Drop (Game progresses toward Loss)
+Actor Image: 
+
+
+
+
+
+The Wall defines the boundaries and path of the maze. It is static and is not moved by anything else. The main and only event is the Collision Event where the Cop and the Robber check for a Wall in their next move, and if it exists their movement is prevented.
+Associated Event: Collision Event (Prevents Movement)
+Actor Image     
+
+
+
+
+
+
+The gold is a object showing the stolen goods. The robber starts with a certain amount of the gold, and the gold drop event causes one unit of the gold to be removed. The main event is the Empty Count Event, which makes a loss condition.
+Associated Event: Empty Count Event (Game Loss)
+Actor Image: 
+
+
+
+
+
+
+Scoring and End Scenario
+Scoring: Score is based on time. Final score is the # of seconds it took the Cop to catch the robber. The lower the time, the better the score
+End Scenario (Win): The Cop successfully tags the Robber, and the screen shows the final time score and “You caught the robber!” shows.
+End Scenario (Loss): After the robber drops all the gold, “Ghost Robber escaped!”  
+
+
+
+
+https://github.com/NuhUh245
