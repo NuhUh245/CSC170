@@ -1,0 +1,5 @@
+Update as of 11/20 For Cops and Robbers Ghost Getaway
+- Timer added to track gameplay duration
+- Cop class updated to show time it took to capture, time it took to capture the robber is the score. The lower the score, the better
+
+- You caught the robber message now also implements the score the player earns
