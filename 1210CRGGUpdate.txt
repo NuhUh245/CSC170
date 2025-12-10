@@ -1,0 +1,3 @@
+- Sound effect added when cop catches robber
+- Background music has been added now 
+- Ghost has been added, meant to distract cop from catching robber
